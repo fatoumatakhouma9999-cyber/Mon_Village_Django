@@ -1,0 +1,22 @@
+import os
+base='village/templates/village'
+os.makedirs(base, exist_ok=True)
+
+pages = {
+'base.html': '<!DOCTYPE html><html><head><title>Bandandar</title><style>body{font-family:Arial;margin:0;background:#fdf6e3}nav{background:#00853f;padding:15px;text-align:center;position:sticky;top:0}nav a{color:white;text-decoration:none;margin:0 10px;font-weight:bold}nav a:hover{color:#fdef42}.header{background:linear-gradient(to right,#00853f,#fdef42,#e31e24);padding:30px;text-align:center;color:white}.container{max-width:1000px;margin:20px auto;background:white;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.2)}.btn{background:#00853f;color:white;padding:10px 20px;border-radius:8px;text-decoration:none}</style></head><body><nav><a href="/">Accueil</a><a href="/presentation/">Presentation</a><a href="/histoire/">Histoire</a><a href="/localisation/">Localisation</a><a href="/culture/">Culture</a><a href="/activites/">Activites</a><a href="/galerie/">Galerie</a><a href="/actualites/">Actualites</a><a href="/contact/">Contact</a><a href="/admin/" style="background:#e31e24;padding:4px 8px;border-radius:5px">Admin</a></nav><div class="header"><h1>Bandandar</h1><p>Teranga - Mon beau village</p></div><div class="container">{% block content %}{% endblock %}</div></body></html>',
+'accueil.html': '{% extends "village/base.html" %}{% block content %}<h1>Bienvenue au Senegal</h1><h2>Bienvenue a Bandandar</h2><p>Mon village au coeur du Senegal.</p><p><a class="btn" href="/presentation/">Decouvrir</a> <a class="btn" href="/contact/">Contact</a></p>{% endblock %}',
+'presentation.html': '{% extends "village/base.html" %}{% block content %}<h1>Presentation du village</h1><p><b>Bandandar</b> est un village du Senegal, connu pour la Teranga.</p><ul><li>Population accueillante</li><li>Traditions conservees</li><li>Solidarite</li></ul>{% endblock %}',
+'histoire.html': '{% extends "village/base.html" %}{% block content %}<h1>Histoire de Bandandar</h1><p>Histoire transmise par les anciens. Fonde il y a des decennies, garde les valeurs de respect et partage.</p>{% endblock %}',
+'localisation.html': '{% extends "village/base.html" %}{% block content %}<h1>Localisation</h1><p>Bandandar se situe au Senegal.</p><iframe width="100%" height="350" src="https://maps.google.com/maps?q=Senegal&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>{% endblock %}',
+'culture.html': '{% extends "village/base.html" %}{% block content %}<h1>Culture et Traditions</h1><ul><li>Langue: Wolof / Pulaar</li><li>Fetes traditionnelles</li><li>Danses et musiques</li><li>Artisanat</li></ul><p>Cuisine: Thieboudienne, Yassa, Mafe.</p>{% endblock %}',
+'activites.html': '{% extends "village/base.html" %}{% block content %}<h1>Activites</h1>{% for a in activites %}<div style="border:1px solid #ddd;padding:10px;margin:10px 0"><h3>{{ a.nom }}</h3><p>{{ a.description }}</p></div>{% empty %}<p>Aucune activite. Ajoute dans /admin/</p>{% endfor %}{% endblock %}',
+'galerie.html': '{% extends "village/base.html" %}{% block content %}<h1>Galerie Photos</h1>{% for p in photos %}<div style="border:1px solid #ddd;padding:10px;margin:5px;display:inline-block"><b>{{ p.titre }}</b></div>{% empty %}<p>Aucune photo. Ajoute dans /admin/</p>{% endfor %}{% endblock %}',
+'actualites.html': '{% extends "village/base.html" %}{% block content %}<h1>Actualites</h1>{% for actu in actus %}<div style="border-left:5px solid green;padding:10px;margin:10px;background:#f9f9f9"><h3>{{ actu.titre }}</h3><small>{{ actu.date }}</small><p>{{ actu.contenu }}</p></div>{% empty %}<p>Aucune actu. Ajoute dans /admin/</p>{% endfor %}{% endblock %}',
+'contact.html': '{% extends "village/base.html" %}{% block content %}<h1>Contact</h1>{% if success %}<div style="background:#d4edda;padding:10px">Message envoye !</div>{% endif %}<form method="post">{% csrf_token %}<p>Nom:<br><input type="text" name="nom" required style="width:100%;padding:8px"></p><p>Email:<br><input type="text" name="email" required style="width:100%;padding:8px"></p><p>Message:<br><textarea name="message" rows="4" required style="width:100%;padding:8px"></textarea></p><button class="btn" type="submit">Envoyer</button></form>{% endblock %}',
+}
+
+for nom, contenu in pages.items():
+    with open(os.path.join(base, nom), 'w', encoding='utf-8') as f:
+        f.write(contenu)
+
+print('TOUTES LES PAGES CREEES OK')

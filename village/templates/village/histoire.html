@@ -1,0 +1,53 @@
+{% extends "village/base.html" %}
+{% load static %}
+{% block content %}
+<div style="max-width:900px; margin:auto; padding:20px;">
+
+  <h1 style="text-align:center; color:#00853f;"> Histoire de Bandandar</h1>
+  <p style="text-align:center; color:#666;">Un village Wolof au cœur du Sénégal</p>
+
+  <div style="background:#f9f9f9; padding:25px; border-radius:15px; margin-top:20px; border-left:6px solid #00853f;">
+    <h2 style="color:#00853f;"> Origines et Fondation</h2>
+    <p style="font-size:17px; line-height:1.8; text-align:justify;">
+      <strong>Bandandar</strong> est un village <strong>Wolof</strong> fondé il y a plusieurs générations dans la région de Fatick, Djilor.
+      Fondé par des familles Wolof venues s'installer sur ces terres fertiles, le village a grandi autour de l'agriculture, de l'élevage et de la solidarité.
+      Le nom Bandandar vient de l'histoire de nos ancêtres Wolof. Comme tous les villages Wolof, Bandandar est construit autour de la Teranga, du respect des anciens et de l'entraide.
+    </p>
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:25px;">
+    <div style="background:white; padding:20px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.1);">
+      <h3 style="color:#00853f;"> Culture Wolof</h3>
+      <p style="line-height:1.6; text-align:justify;">
+        Bandandar est un village <strong>100% Wolof</strong>. Notre langue est le Wolof, notre culture est la culture Wolof : 
+        le respect, la Teranga, le Ngor, le Djom. Les cérémonies traditionnelles, les contes le soir, 
+        le thé Ataya sous l'arbre à palabres font partie de notre vie quotidienne.
+      </p>
+    </div>
+    <div style="background:white; padding:20px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.1);">
+      <h3 style="color:#00853f;"> Vie du Village</h3>
+      <p style="line-height:1.6; text-align:justify;">
+        Autrefois petit hameau, Bandandar est devenu un grand village Wolof. 
+        Agriculture du mil, arachide, élevage, le puits central, la mosquée du village, 
+        tout montre la vie d'une communauté Wolof qui garde ses valeurs tout en avançant.
+      </p>
+      <img src="{% static 'village/images/3.jpeg' %}" style="width:100%; height:140px; object-fit:cover; border-radius:8px; margin-top:10px;">
+    </div>
+  </div>
+
+  <div style="background:#00853f; color:white; padding:25px; border-radius:15px; margin-top:30px;">
+    <h2 style="margin-top:0; text-align:center;"> Chronologie Wolof</h2>
+    <div style="background:rgba(255,255,255,0.15); padding:15px; border-radius:10px; margin-top:15px;">
+      <p><strong> Fondation :</strong> Par des familles Wolof venues s'installer à Djilor</p>
+      <p><strong> Royaume :</strong> Bandandar dans l'histoire des grands royaumes Wolof</p>
+      <p><strong> Traditions :</strong> Transmission de la langue et culture Wolof de père en fils</p>
+      <p><strong> Aujourd'hui :</strong> Sous la chefferie de Abdoulaye Willane - Fierté Wolof</p>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:30px;">
+    <a href="/presentation/" style="background:#ddd; color:black; padding:10px 20px; text-decoration:none; border-radius:20px; margin-right:10px;">⬅ Présentation</a>
+    <a href="/galerie/" style="background:#00853f; color:white; padding:10px 20px; text-decoration:none; border-radius:20px;">Galerie </a>
+  </div>
+</div>
+{% endblock %}

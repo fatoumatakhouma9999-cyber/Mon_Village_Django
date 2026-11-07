@@ -1,0 +1,55 @@
+{% extends "village/base.html" %}
+{% load static %}
+{% block content %}
+<h1 style="text-align:center; color:#00853f;">Galerie de Bandandar</h1>
+<h3 style="text-align:center;"> Chef : Abdoulaye Willane - Fatick / Djilor</h3>
+
+<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; padding:20px;">
+
+  <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.2);">
+    <img src="{% static 'village/images/1.jpeg' %}" style="width:100%; height:200px; object-fit:cover;">
+    <p style="text-align:center; padding:8px; margin:0; font-weight:bold;">Vue aérienne du village</p>
+  </div>
+
+  <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.2);">
+    <img src="{% static 'village/images/2.jpeg' %}" style="width:100%; height:200px; object-fit:cover;">
+    <p style="text-align:center; padding:8px; margin:0; font-weight:bold;">Rue principale de Bandandar</p>
+  </div>
+
+  <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.2);">
+    <img src="{% static 'village/images/3.jpeg' %}" style="width:100%; height:200px; object-fit:cover;">
+    <p style="text-align:center; padding:8px; margin:0; font-weight:bold;">Cases traditionnelles</p>
+  </div>
+
+  <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.2);">
+    <img src="{% static 'village/images/4.jpeg' %}" style="width:100%; height:200px; object-fit:cover;">
+    <p style="text-align:center; padding:8px; margin:0; font-weight:bold;">Le puits du village</p>
+  </div>
+
+  <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.2);">
+    <img src="{% static 'village/images/5.jpeg' %}" style="width:100%; height:200px; object-fit:cover;">
+    <p style="text-align:center; padding:8px; margin:0; font-weight:bold;">Femmes de Bandandar</p>
+  </div>
+
+  <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.2);">
+    <img src="{% static 'village/images/6.jpeg' %}" style="width:100%; height:200px; object-fit:cover;">
+    <p style="text-align:center; padding:8px; margin:0; font-weight:bold;">Vie quotidienne</p>
+  </div>
+
+  <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.2);">
+    <img src="{% static 'village/images/7.jpeg' %}" style="width:100%; height:200px; object-fit:cover;">
+    <p style="text-align:center; padding:8px; margin:0; font-weight:bold;">Le fleuve Sine</p>
+  </div>
+
+  <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.2);">
+    <img src="{% static 'village/images/8.jpeg' %}" style="width:100%; height:200px; object-fit:cover;">
+    <p style="text-align:center; padding:8px; margin:0; font-weight:bold;">Quartier des habitations</p>
+  </div>
+
+  <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.2);">
+    <img src="{% static 'village/images/9.jpeg' %}" style="width:100%; height:200px; object-fit:cover;">
+    <p style="text-align:center; padding:8px; margin:0; font-weight:bold;">Nature et verdure</p>
+  </div>
+
+</div>
+{% endblock %}

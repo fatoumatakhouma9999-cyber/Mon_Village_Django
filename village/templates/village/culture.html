@@ -1,0 +1,91 @@
+{% extends "village/base.html" %}
+{% load static %}
+{% block content %}
+<div style="max-width:1000px; margin:auto; padding:20px;">
+
+  <h1 style="text-align:center; color:#00853f; font-size:40px;"> Culture Wolof de Bandandar</h1>
+  <p style="text-align:center; font-size:18px; color:#666;">Teranga - Ngor - Djom - Kersa</p>
+
+  <div style="background:linear-gradient(to right, #00853f, #00a651); color:white; padding:30px; border-radius:15px; margin-top:20px; display:grid; grid-template-columns:1fr 2fr; gap:20px; align-items:center;">
+    <img src="{% static 'village/images/5.jpeg' %}" style="width:100%; height:200px; object-fit:cover; border-radius:12px; border:3px solid white;">
+    <div>
+      <h2 style="margin-top:0;"> Notre langue : Le Wolof</h2>
+      <p style="font-size:17px; line-height:1.7;">
+        À Bandandar on parle <strong>Wolof</strong>. C'est notre langue maternelle, notre fierté.
+        On dit : <em>"Nanga def?"</em>, <em>"Jërëjëf"</em>, <em>"Dalal ak diam"</em>.
+        Le Wolof est la langue de la Teranga, parlée par tout le village, du plus petit au Chef Abdoulaye Willane.
+      </p>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; margin-top:25px;">
+    
+    <div style="background:white; padding:20px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); border-top:5px solid #00853f; text-align:center;">
+      <h1 style="margin:0;"></h1>
+      <h3 style="color:#00853f;">TERANGA</h3>
+      <p style="font-size:15px; line-height:1.6;">L'hospitalité. À Bandandar, l'étranger est roi. On l'accueille avec le thé, le repas, le sourire. C'est notre valeur numéro 1.</p>
+    </div>
+
+    <div style="background:white; padding:20px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); border-top:5px solid #ffcc00; text-align:center;">
+      <h1 style="margin:0;"></h1>
+      <h3 style="color:#00853f;">NGOR & DJOM</h3>
+      <p style="font-size:15px; line-height:1.6;">La dignité et le courage. Un Wolof ne trahit pas, ne ment pas, travaille dur. C'est ce que les anciens nous apprennent.</p>
+    </div>
+
+    <div style="background:white; padding:20px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); border-top:5px solid #00853f; text-align:center;">
+      <h1 style="margin:0;"></h1>
+      <h3 style="color:#00853f;">KERSA</h3>
+      <p style="font-size:15px; line-height:1.6;">Le respect et la pudeur. Respect des parents, des anciens, des voisins. On se salue, on s'écoute.</p>
+    </div>
+
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:25px; margin-top:30px;">
+
+    <div style="background:#f9f9f9; padding:20px; border-radius:15px;">
+      <h2 style="color:#00853f;"> Cuisine Wolof</h2>
+      <p style="line-height:1.7;">
+        <strong>Thiébou Djeun</strong> est notre plat national ! Riz au poisson, comme savent le faire nos mamans Wolof.<br>
+        <strong>Yassa poulet</strong>, <strong>Mafé</strong>, <strong>Thiébou Yapp</strong>, <strong>Bassi Salte</strong> le vendredi.<br>
+        Et le soir, le fameux <strong>Ataya</strong> - les 3 thés sous l'arbre à palabres, on discute jusqu'à tard.
+      </p>
+      <img src="{% static 'village/images/6.jpeg' %}" style="width:100%; height:160px; object-fit:cover; border-radius:10px; margin-top:10px;">
+    </div>
+
+    <div style="background:#f9f9f9; padding:20px; border-radius:15px;">
+      <h2 style="color:#00853f;"> Fêtes & Traditions</h2>
+      <p style="line-height:1.7;">
+        <strong>Tabaski & Korité :</strong> Toute la famille réunie, habits neufs (Sagnse)<br>
+        <strong>Mariage Wolof :</strong> Le Teraanga, le Sabar, le chant des griots<br>
+        <strong>Baptême :</strong> Ngente, on donne le nom au bébé<br>
+        <strong>Gamou :</strong> On célèbre le Prophète PSL avec ferveur<br>
+        <strong>Sabar & Mbalax :</strong> Nos danses et musiques Wolof !
+      </p>
+      <div style="background:#00853f; color:white; padding:10px; border-radius:8px; text-align:center; margin-top:10px;">
+        <strong>Boubou Wolof - Tissu traditionnel - Sabar</strong>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="background:white; border:2px solid #ffcc00; padding:25px; border-radius:15px; margin-top:30px; text-align:center;">
+    <h2 style="color:#00853f; margin-top:0;"> Le rôle du Chef Abdoulaye Willane</h2>
+    <p style="font-size:17px; line-height:1.8; max-width:700px; margin:auto;">
+      Dans la culture Wolof, le Chef est le garant de la tradition. <strong>Abdoulaye Willane</strong> est celui qui règle les conflits,
+      conseille les jeunes, garde l'unité du village. Sous l'arbre à palabres, sa parole est respectée par tous.
+      Il représente Bandandar partout à Djilor et Fatick.
+    </p>
+  </div>
+
+  <div style="text-align:center; margin-top:30px; background:#00853f; color:white; padding:20px; border-radius:15px;">
+    <h2 style="margin:0;">WOLOF NDAYSAN ! </h2>
+    <p style="font-size:18px; margin:10px 0 0 0;">Bandandar = Fierté Wolof - Teranga Sénégal 🇸🇳</p>
+  </div>
+
+  <div style="text-align:center; margin-top:25px;">
+    <a href="/localisation/" style="background:#ddd; color:black; padding:10px 20px; text-decoration:none; border-radius:20px; margin-right:10px;"> Localisation</a>
+    <a href="/galerie/" style="background:#00853f; color:white; padding:10px 20px; text-decoration:none; border-radius:20px;">Galerie </a>
+  </div>
+
+</div>
+{% endblock %}

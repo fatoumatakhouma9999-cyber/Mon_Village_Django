@@ -1,0 +1,94 @@
+{% extends "village/base.html" %}
+{% load static %}
+{% block content %}
+<div style="max-width:1000px; margin:auto; padding:20px;">
+
+  <h1 style="text-align:center; color:#00853f; font-size:38px;"> Nos Activités à Bandandar</h1>
+  <p style="text-align:center; color:#666; font-size:18px;">Le travail des hommes et surtout des femmes courageuses</p>
+
+  <!-- ACTIVITE PRINCIPALE - FEMMES -->
+  <div style="background:linear-gradient(to right, #e8f5e9, #ffffff); padding:25px; border-radius:20px; border:3px solid #00853f; margin-top:25px; display:grid; grid-template-columns:1fr 2fr; gap:20px; align-items:center;">
+    <img src="{% static 'village/images/7.jpeg' %}" style="width:100%; height:250px; object-fit:cover; border-radius:15px; border:3px solid #00853f;">
+    <div>
+      <h2 style="color:#00853f; margin-top:0;"> Les Femmes - Maraîchage de NANA (Menthe)</h2>
+      <p style="font-size:17px; line-height:1.8; text-align:justify;">
+        <strong>La fierté de Bandandar, ce sont nos femmes !</strong><br><br>
+        Tous les matins, tôt le matin, les femmes de Bandandar vont au jardin maraîcher. Elles font le <strong>maraîchage</strong> : 
+        elles arrosent, elles plantent, elles entretiennent les plans de <strong>NANA (menthe)</strong>.<br><br>
+        La menthe NANA, c'est pour le thé Ataya, c'est pour vendre au marché de Djilor et Fatick. 
+        C'est avec cet argent que les femmes aident la famille, payent l'école des enfants.<br><br>
+        <span style="background:#00853f; color:white; padding:5px 12px; border-radius:15px;"> Arrosage tous les jours</span>
+        <span style="background:#ffcc00; color:black; padding:5px 12px; border-radius:15px;"> Plants de NANA</span>
+      </p>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; margin-top:25px;">
+
+    <div style="background:white; padding:20px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.1); border-bottom:5px solid #00853f;">
+      <h1 style="text-align:center; margin:0;"></h1>
+      <h3 style="color:#00853f; text-align:center;">Maraîchage Femmes</h3>
+      <ul style="line-height:1.8; font-size:15px;">
+        <li>NANA (menthe) - activité principale</li>
+        <li>Oignon, tomate, piment</li>
+        <li>Arrosage manuel au puits</li>
+        <li>Vente au marché de Djilor</li>
+        <li>Groupement des femmes</li>
+      </ul>
+    </div>
+
+    <div style="background:white; padding:20px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.1); border-bottom:5px solid #ffcc00;">
+      <h1 style="text-align:center; margin:0;"></h1>
+      <h3 style="color:#00853f; text-align:center;">Agriculture Hommes</h3>
+      <ul style="line-height:1.8; font-size:15px;">
+        <li>Mil, arachide, maïs</li>
+        <li>Saison des pluies (hivernage)</li>
+        <li>Culture avec charrette / cheval</li>
+        <li>Greniers traditionnels</li>
+        <li>Nourrit tout le village</li>
+      </ul>
+    </div>
+
+    <div style="background:white; padding:20px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.1); border-bottom:5px solid #00853f;">
+      <h1 style="text-align:center; margin:0;"></h1>
+      <h3 style="color:#00853f; text-align:center;">Élevage</h3>
+      <ul style="line-height:1.8; font-size:15px;">
+        <li>Vaches, moutons, chèvres</li>
+        <li>Poulets traditionnels</li>
+        <li>Lait, viande, Tabaski</li>
+        <li>Les enfants gardent les troupeaux</li>
+        <li>Richesse des Wolof</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div style="display:grid; grid-template-columns:2fr 1fr; gap:20px; margin-top:25px; background:#f9f9f9; padding:20px; border-radius:15px;">
+    <div>
+      <h2 style="color:#00853f;"> Une journée des femmes au jardin</h2>
+      <p style="line-height:1.8; font-size:16px; text-align:justify;">
+        <strong>5h du matin :</strong> Les femmes se lèvent, prière, puis direction le jardin.<br>
+        <strong>6h - 10h :</strong> Arrosage des plans de NANA avec des arrosoirs, désherbage, entretien.<br>
+        <strong>10h :</strong> Retour à la maison, cuisine, enfants.<br>
+        <strong>Soir :</strong> Récolte de la menthe, préparation des bottes pour le marché du lendemain.<br><br>
+        C'est un travail dur sous le soleil, mais nos femmes sont courageuses. <strong>Jërëjëf aux femmes de Bandandar !</strong> 
+      </p>
+    </div>
+    <div>
+      <img src="{% static 'village/images/10.jpeg' %}" style="width:100%; height:220px; object-fit:cover; border-radius:12px; border:3px solid #00853f;">
+      <p style="text-align:center; font-weight:bold; color:#00853f; margin-top:5px;">Le jardin de NANA</p>
+    </div>
+  </div>
+
+  <div style="background:#00853f; color:white; padding:20px; border-radius:15px; margin-top:25px; text-align:center;">
+    <h2 style="margin:0;"> Groupement des Femmes de Bandandar </h2>
+    <p style="font-size:17px; margin:10px 0 0 0;">Unies, solidaires, travailleuses - Elles font vivre le village avec le NANA !</p>
+  </div>
+
+  <div style="text-align:center; margin-top:25px;">
+    <a href="/culture/" style="background:#ddd; color:black; padding:10px 20px; text-decoration:none; border-radius:20px; margin-right:10px;">⬅ Culture</a>
+    <a href="/galerie/" style="background:#00853f; color:white; padding:10px 20px; text-decoration:none; border-radius:20px;">Galerie  </a>
+  </div>
+
+</div>
+{% endblock %}

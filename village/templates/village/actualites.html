@@ -1,0 +1,65 @@
+{% extends "village/base.html" %}
+{% load static %}
+{% block content %}
+<div style="max-width:1000px; margin:auto; padding:20px;">
+
+  <h1 style="text-align:center; color:#00853f; font-size:40px;"> Actualités de Bandandar</h1>
+  <p style="text-align:center; color:#666;">Toutes les nouvelles du village - Fatick / Djilor</p>
+
+  <!-- ACTU 1 -->
+  <div style="background:white; padding:20px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.1); border-left:6px solid #00853f; margin-top:25px; display:grid; grid-template-columns:1fr 2fr; gap:20px;">
+    <img src="{% static 'village/images/12.jpeg' %}" style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
+    <div>
+      <span style="background:#00853f; color:white; padding:4px 10px; border-radius:15px; font-size:12px;">01 Nov 2026 • AGRICULTURE</span>
+      <h3 style="color:#00853f; margin:10px 0;">🌿 Grande récolte de NANA par les femmes</h3>
+      <p style="line-height:1.6; text-align:justify;">
+        Aujourd'hui, le groupement des femmes de Bandandar a fait une grande récolte de menthe NANA.
+        Arrosage tous les jours, entretien des plans, et maintenant vente au marché de Djilor.
+        Bravo à nos mamans courageuses ! Jërëjëf !
+      </p>
+      <p style="color:#999; font-size:13px;">Par Abdoulaye Willane - Chef du village</p>
+    </div>
+  </div>
+
+  <!-- ACTU 2 -->
+  <div style="background:white; padding:20px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.1); border-left:6px solid #ffcc00; margin-top:20px; display:grid; grid-template-columns:1fr 2fr; gap:20px;">
+    <img src="{% static 'village/images/5.jpeg' %}" style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
+    <div>
+      <span style="background:#ffcc00; color:black; padding:4px 10px; border-radius:15px; font-size:12px;">28 Oct 2026 • VILLAGE</span>
+      <h3 style="color:#00853f; margin:10px 0;"> Prière du vendredi et réunion du village</h3>
+      <p style="line-height:1.6; text-align:justify;">
+        Le Chef Abdoulaye Willane a réuni tous les habitants sous l'arbre à palabres.
+        Discussion sur l'école, le forage, et la préparation de la Tabaski.
+        L'unité du village Wolof est notre force.
+      </p>
+      <p style="color:#999; font-size:13px;">Djilor - Fatick</p>
+    </div>
+  </div>
+
+  <!-- ACTU 3 -->
+  <div style="background:white; padding:20px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.1); border-left:6px solid #00853f; margin-top:20px; display:grid; grid-template-columns:1fr 2fr; gap:20px;">
+    <img src="{% static 'village/images/3.jpeg' %}" style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
+    <div>
+      <span style="background:#00853f; color:white; padding:4px 10px; border-radius:15px; font-size:12px;">20 Oct 2026 • JEUNESSE</span>
+      <h3 style="color:#00853f; margin:10px 0;">⚽ Tournoi de football intervillage</h3>
+      <p style="line-height:1.6; text-align:justify;">
+        L'équipe de Bandandar a joué contre Djilor. Match nul 1-1 mais belle ambiance.
+        Nos jeunes ont montré le Ngor et le Djom Wolof. Prochain match à Fatick !
+      </p>
+      <p style="color:#999; font-size:13px;">Stade de Bandandar</p>
+    </div>
+  </div>
+
+  <!-- ACTU 4 - SITE WEB -->
+  <div style="background:linear-gradient(to right, #00853f, #00a651); color:white; padding:20px; border-radius:15px; margin-top:25px; text-align:center;">
+    <h2 style="margin:0;"> Nouveau site web du village Bandandar en ligne ! 🇸🇳</h2>
+    <p style="margin:10px 0 0 0; font-size:17px;">Merci à Abdoulaye Willane, Chef du village, pour ce projet. Le village entre dans le numérique !</p>
+  </div>
+
+  <div style="text-align:center; margin-top:30px;">
+    <a href="/activites/" style="background:#ddd; color:black; padding:10px 20px; text-decoration:none; border-radius:20px; margin-right:10px;">⬅ Activités</a>
+    <a href="/contact/" style="background:#00853f; color:white; padding:10px 20px; text-decoration:none; border-radius:20px;">Contact  </a>
+  </div>
+
+</div>
+{% endblock %}

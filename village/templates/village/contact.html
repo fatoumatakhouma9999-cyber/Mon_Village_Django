@@ -1,0 +1,72 @@
+{% extends "village/base.html" %}
+{% load static %}
+{% block content %}
+<div style="max-width:1000px; margin:auto; padding:20px;">
+
+  <h1 style="text-align:center; color:#00853f; font-size:40px;"> Contactez Bandandar</h1>
+  <p style="text-align:center; color:#666;">Village de Bandandar - Djilor - Fatick - Sénégal</p>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:25px; margin-top:30px;">
+
+    <!-- INFOS CHEF -->
+    <div style="background:white; padding:25px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.1); border-left:6px solid #00853f;">
+      <h2 style="color:#00853f; margin-top:0;"> Chef du Village</h2>
+      <p style="font-size:18px; line-height:1.8;">
+        <strong>Abdoulaye Willane</strong><br>
+         Bandandar, Djilor<br>
+         Région de Fatick, Sénégal<br>
+         Tel : +221 XX XXX XX XX<br>
+         Email : bandandar.fatick@gmail.com<br><br>
+        <span style="background:#e8f5e9; padding:8px 12px; border-radius:8px;">
+           Disponible : 8h - 18h<br>
+          Sous l'arbre à palabres
+        </span>
+      </p>
+
+      <div style="margin-top:20px; background:#f9f9f9; padding:15px; border-radius:10px;">
+        <h3 style="color:#00853f; margin:0;"> Pour acheter NANA :</h3>
+        <p style="margin:5px 0;">Contactez le groupement des femmes de Bandandar - Marché de Djilor tous les lundis.</p>
+      </div>
+    </div>
+
+    <!-- FORMULAIRE -->
+    <div style="background:#00853f; color:white; padding:25px; border-radius:15px;">
+      <h2 style="margin-top:0; color:white;">✉️ Envoyer un message</h2>
+      <form method="post" style="display:flex; flex-direction:column; gap:15px;">
+        {% csrf_token %}
+        <input type="text" name="nom" placeholder="Votre nom" required style="padding:12px; border-radius:8px; border:none;">
+        <input type="tel" name="telephone" placeholder="Votre téléphone" style="padding:12px; border-radius:8px; border:none;">
+        <input type="text" name="sujet" placeholder="Sujet : Achat NANA, Visite, etc." style="padding:12px; border-radius:8px; border:none;">
+        <textarea name="message" rows="4" placeholder="Votre message pour le village..." required style="padding:12px; border-radius:8px; border:none;"></textarea>
+        <button type="submit" style="background:#ffcc00; color:black; padding:12px; border:none; border-radius:20px; font-weight:bold; cursor:pointer; font-size:16px;">
+          Envoyer au Chef 
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <div style="background:white; padding:20px; border-radius:15px; margin-top:25px; display:grid; grid-template-columns:1fr 2fr; gap:20px; align-items:center; border:2px solid #ffcc00;">
+    <div style="text-align:center;">
+      <h1 style="font-size:50px; margin:0;"></h1>
+      <h3 style="color:#00853f;">Teranga</h3>
+      <p>Vous êtes les bienvenus à Bandandar !</p>
+    </div>
+    <div>
+      <h3 style="color:#00853f;">Comment venir à Bandandar ?</h3>
+      <p style="line-height:1.7;">
+        <strong>Depuis Dakar :</strong> Route vers Fatick (150 km)<br>
+        <strong>Depuis Fatick :</strong> Direction Foundiougne, arrêt Djilor, puis piste Bandandar (30 km)<br>
+        <strong>Transport :</strong> Taxi-brousse depuis Gare routière de Fatick<br>
+        <strong>Repère :</strong> Demandez le jardin de NANA des femmes, tout le monde connaît !
+      </p>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:30px;">
+    <a href="/actualites/" style="background:#ddd; color:black; padding:10px 20px; text-decoration:none; border-radius:20px; margin-right:10px;"> Actualités</a>
+    <a href="/" style="background:#00853f; color:white; padding:10px 20px; text-decoration:none; border-radius:20px;">Accueil </a>
+  </div>
+
+</div>
+{% endblock %}

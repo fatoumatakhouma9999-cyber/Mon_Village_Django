@@ -1,0 +1,43 @@
+{% extends "village/base.html" %}
+{% load static %}
+{% block content %}
+<div style="max-width:900px; margin:auto; padding:20px;">
+  <h1 style="text-align:center; color:#00853f;">Bienvenue à Bandandar</h1>
+  <h2 style="text-align:center;"> Chef : Abdoulaye Willane - Fatick / Djilor</h2>
+
+  <div style="background:#f9f9f9; padding:20px; border-radius:15px; margin-top:20px;">
+    <h2 style="color:#00853f;"> Présentation générale</h2>
+    <p style="font-size:17px; line-height:1.6; text-align:justify;">
+      <strong>Bandandar</strong> est un village chaleureux situé dans la région de <strong>Fatick</strong>, 
+      département de Djilor, au cœur du Sine. Un village traditionnel wolof, 
+      riche de sa culture, de son hospitalité et de ses traditions ancestrales.
+    </p>
+    <img src="{% static 'village/images/1.jpeg' %}" style="width:100%; max-height:350px; object-fit:cover; border-radius:10px; margin-top:15px; border:3px solid #00853f;">
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:15px; margin-top:25px;">
+    <div style="background:white; border-left:5px solid #00853f; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+      <h3 style="color:#00853f;"> Localisation</h3>
+      <p>Région: Fatick<br>Département: Djilor<br>Pays: Sénégal</p>
+    </div>
+    <div style="background:white; border-left:5px solid #ffcc00; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+      <h3 style="color:#00853f;"> Population</h3>
+      <p>Ethnie: Wolof<br>Langues: Sérère, Wolof<br>Religion: Islam</p>
+    </div>
+    <div style="background:white; border-left:5px solid #00853f; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+      <h3 style="color:#00853f;"> Activités</h3>
+      <p>Agriculture<br>Élevage<br>Pêche<br>Artisanat</p>
+    </div>
+  </div>
+
+  <div style="background:#00853f; color:white; padding:20px; border-radius:15px; margin-top:30px; text-align:center;">
+    <h2> Le mot du Chef</h2>
+    <p style="font-style:italic; font-size:18px;">"Bandandar est un village de paix, de respect et de Teranga. Notre porte est ouverte à tous."</p>
+    <p style="font-weight:bold;">- Abdoulaye Willane, Chef de Bandandar</p>
+  </div>
+
+  <div style="text-align:center; margin-top:30px;">
+    <a href="/galerie/" style="background:#00853f; color:white; padding:12px 25px; text-decoration:none; border-radius:25px; font-weight:bold;">Voir la Galerie </a>
+  </div>
+</div>
+{% endblock %}
